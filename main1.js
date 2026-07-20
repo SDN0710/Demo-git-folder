@@ -115,7 +115,7 @@ console.log("Demo branch")
 
 console.log("Hello world")
 
-console.log("this is a demo branch")
+console.log("updating git branch")
 
 
 
