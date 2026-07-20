@@ -38,78 +38,80 @@
 
 // queryOutput.textContent =" This is being changed"
 
-const wrapper = document.getElementById("wrapper")
-const img = document.getElementById("img-tag")
+// const wrapper = document.getElementById("wrapper")
+// const img = document.getElementById("img-tag")
 
-// innerHTML()
+// // innerHTML()
 
-console.log(wrapper.innerHTML)
+// console.log(wrapper.innerHTML)
 
-// textContent()
+// // textContent()
 
-console.log(wrapper.textContent)
+// console.log(wrapper.textContent)
 
-// innerText()
+// // innerText()
 
-console.log(wrapper.innerText)
+// console.log(wrapper.innerText)
 
-// getAttribute()
+// // getAttribute()
 
-const imgAttributes = img.getAttribute("src")
+// const imgAttributes = img.getAttribute("src")
 
-console.log(imgAttributes)
+// console.log(imgAttributes)
 
-// getAttributeNames() -> only keys
+// // getAttributeNames() -> only keys
 
-const getAllAttributes = img.getAttributeNames()
+// const getAllAttributes = img.getAttributeNames()
 
-console.log(getAllAttributes)
+// console.log(getAllAttributes)
 
-// getAttributeNames() -> for all data (both key & value)
+// // getAttributeNames() -> for all data (both key & value)
 
-getAllAttributes.forEach((att) => {
-    console.log(`${att}:${img.getAttribute(att)}`)
-})
+// getAllAttributes.forEach((att) => {
+//     console.log(`${att}:${img.getAttribute(att)}`)
+// })
 
-// setAttribute()
+// // setAttribute()
 
-const imgTag = document.getElementById("img_Tag2")
+// const imgTag = document.getElementById("img_Tag2")
 
-imgTag.setAttribute("src","https://placehold.co/100x200")
-imgTag.setAttribute("style","border:2px solid black")
+// imgTag.setAttribute("src","https://placehold.co/100x200")
+// imgTag.setAttribute("style","border:2px solid black")
 
-img.setAttribute("style","border:5px dotted purple")
+// img.setAttribute("style","border:5px dotted purple")
 
-// removeAttribute()
+// // removeAttribute()
 
-imgTag.removeAttribute("src","https://placehold.co/100x200")
+// imgTag.removeAttribute("src","https://placehold.co/100x200")
 
-// classList.add()
+// // classList.add()
 
-const heading = document.getElementById("heading")
+// const heading = document.getElementById("heading")
 
-heading.classList.add("underline", "text-red-500")
+// heading.classList.add("underline", "text-red-500")
 
-// classList.remove()
+// // classList.remove()
 
-heading.classList.remove("text-red-500")
+// heading.classList.remove("text-red-500")
 
-// EventListener
+// // EventListener
 
-const toggleButton = document.getElementById("toggle-Button")
+// const toggleButton = document.getElementById("toggle-Button")
 
-toggleButton.addEventListener("click",() => {
+// toggleButton.addEventListener("click",() => {
 
-    //  classList.toggle()
+//     //  classList.toggle()
 
 
-    toggleButton.classList.toggle("bg-green-500")
-    toggleButton.classList.toggle("bg-red-500")
-})
+//     toggleButton.classList.toggle("bg-green-500")
+//     toggleButton.classList.toggle("bg-red-500")
+// })
 
-// classList.contains()
+// // classList.contains()
 
-console.log(toggleButton.classList.contains("bg-green-500"))
+// console.log(toggleButton.classList.contains("bg-green-500"))
+
+console.log("Hello world")
 
 
 
