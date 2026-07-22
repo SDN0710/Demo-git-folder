@@ -111,11 +111,58 @@
 
 // console.log(toggleButton.classList.contains("bg-green-500"))
 
-console.log("Demo branch")
+// .style()
 
-console.log("Hello world")
+const wrapper = document.getElementById("wrapper");
 
-console.log("updating git branch")
+// wrapper.style.width = "100px";
+// wrapper.style.height = "100px";
+
+// wrapper.style.backgroundColor = "rgba(0,0,0,2)"
+
+// const wrapper = document.getElementById("wrapper").style
+
+// wrapper.marginTop = "2mm"
+
+// wrapper.marginleft = "20mm"
+
+// createElement()
+
+const div = document.createElement("div")
+
+// console.log(div)
+
+const h1 = document.createElement("h1")
+const p  = document.createElement("p")
+const img = document.createElement("img")
+
+// appendChild()
+
+wrapper.appendChild(h1)
+
+// prepend()
+
+wrapper.prepend(div)
+wrapper.prepend(p)
+
+// append()
+
+wrapper.append("This is a append process")
+
+// insertBefore()
+
+wrapper.insertBefore(img , h1)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
