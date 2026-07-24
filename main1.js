@@ -113,7 +113,7 @@
 
 // .style()
 
-const wrapper = document.getElementById("wrapper");
+// const wrapper = document.getElementById("wrapper");
 
 // wrapper.style.width = "100px";
 // wrapper.style.height = "100px";
@@ -126,32 +126,93 @@ const wrapper = document.getElementById("wrapper");
 
 // wrapper.marginleft = "20mm"
 
-// createElement()
+// // createElement()
 
-const div = document.createElement("div")
+// const div = document.createElement("div")
 
-// console.log(div)
+// // console.log(div)
 
-const h1 = document.createElement("h1")
-const p  = document.createElement("p")
-const img = document.createElement("img")
+// const h1 = document.createElement("h1")
+// const p  = document.createElement("p")
+// const img = document.createElement("img")
 
-// appendChild()
+// // appendChild()
 
-wrapper.appendChild(h1)
+// wrapper.appendChild(h1)
 
-// prepend()
+// // prepend()
 
-wrapper.prepend(div)
-wrapper.prepend(p)
+// wrapper.prepend(div)
+// wrapper.prepend(p)
 
-// append()
+// // append()
 
-wrapper.append("This is a append process")
+// wrapper.append("This is a append process")
 
-// insertBefore()
+// // insertBefore()
 
-wrapper.insertBefore(img , h1)
+// wrapper.insertBefore(img , h1)
+
+// remove()
+
+const img = document.getElementById("img_Tag2");
+
+const deleteEl = img.remove()
+
+// console.log(deleteEl)
+
+const parent = document.getElementById("wrapper");
+
+const img1 = document.getElementById("img-tag")[0];
+
+const removedChild = parent.removeChild(img_Tag2) // not working
+
+// .parentElement
+
+console.log(img_Tag2.parentElement)
+
+// .children
+
+console.log(parent.children)
+
+// .nextElementSibling
+
+console.log(parent.nextElementSibling)
+
+// .addEventListener
+
+const btn = document.getElementsByTagName("button")[0];
+
+// click
+
+btn.addEventListener("click", logToconsole )
+
+function logToconsole(){
+    console.log("Event triggered")
+}
+
+btn.removeEventListener("click", logToconsole)
+
+// input
+
+const inputName = document.getElementsByTagName("input")[0];
+const result = document.getElementById("result");
+
+inputName.addEventListener("input",(e) => {
+    result.textContent = e.target.value
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
