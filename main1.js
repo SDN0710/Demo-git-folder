@@ -155,43 +155,43 @@
 
 // remove()
 
-const img = document.getElementById("img_Tag2");
+// const img = document.getElementById("img_Tag2");
 
-const deleteEl = img.remove()
+// const deleteEl = img.remove()
 
-// console.log(deleteEl)
+// // console.log(deleteEl)
 
-const parent = document.getElementById("wrapper");
+// const parent = document.getElementById("wrapper");
 
-const img1 = document.getElementById("img-tag")[0];
+// const img1 = document.getElementById("img-tag")[0];
 
-const removedChild = parent.removeChild(img_Tag2) // not working
+// const removedChild = parent.removeChild(img_Tag2) // not working
 
-// .parentElement
+// // .parentElement
 
-console.log(img_Tag2.parentElement)
+// console.log(img_Tag2.parentElement)
 
-// .children
+// // .children
 
-console.log(parent.children)
+// console.log(parent.children)
 
-// .nextElementSibling
+// // .nextElementSibling
 
-console.log(parent.nextElementSibling)
+// console.log(parent.nextElementSibling)
 
-// .addEventListener
+// // .addEventListener
 
-const btn = document.getElementsByTagName("button")[0];
+// const btn = document.getElementsByTagName("button")[0];
 
-// click
+// // click
 
-btn.addEventListener("click", logToconsole )
+// btn.addEventListener("click", logToconsole )
 
-function logToconsole(){
-    console.log("Event triggered")
-}
+// function logToconsole(){
+//     console.log("Event triggered")
+// }
 
-btn.removeEventListener("click", logToconsole)
+// btn.removeEventListener("click", logToconsole)
 
 // input
 
@@ -201,6 +201,34 @@ const result = document.getElementById("result");
 inputName.addEventListener("input",(e) => {
     result.textContent = e.target.value
 })
+
+// change
+
+inputName.addEventListener("change",(e) => {
+    result.textContent = e.target.value
+})
+
+const form = document.getElementsByTagName("form")[0];
+
+// submit
+
+form.addEventListener("submit",(e) => {    
+    e.preventDefault();
+    console.log( e.target)
+})
+
+// load
+
+window.addEventListener("load", (e) => {
+    console.log(e)
+    document.body.innerHTML = "Loading"
+})
+
+window.onload = (e) =>{
+    console.log("page fully loaded");
+}
+
+
 
 
 
